@@ -46,5 +46,5 @@ limitations under the License.
 
 ### Contributing code written by others
 
-Please do not contribute code you did not write yourself, unless you are certain you have the legal ability to do so.
+Please do not contribute code you did not write yourself, unless you are certain you have the legal ability to do so. Also ensure all code contributed can be licensed under the Apache License 2.0.
 
