@@ -3,17 +3,22 @@ Contributing to Esri Open Source Projects
 
 Esri welcomes contributions to our [open source projects on Github](http://esri.github.io/). 
 
+Issues
+------
+
+Feel free to submit issues and enhancement requests.
 
 Contributing
 ------------
 
 Please refer to each project's style guidelines and guidelines for submitting patches and additions. In general, we follow the "fork-and-pull" Git workflow.
 
-* fork the repo on GitHub
-* commit changes to a branch in your fork
-* pull request "upstream" with your changes
-* merge changes in to "upstream" repo
+ 1. Fork the repo on GitHub
+ 2. Commit changes to a branch in your fork
+ 3. Pull request "upstream" with your changes
+ 4. Merge changes in to "upstream" repo
 
+NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 
 Copyright and Licensing
 -----------------------
