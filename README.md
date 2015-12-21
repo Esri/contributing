@@ -1,7 +1,7 @@
 Contributing to Esri Open Source Projects
 =========================================
 
-Esri welcomes contributions to our [open source projects on Github](http://esri.github.io/). 
+Esri welcomes contributions to our [open source projects on Github](http://esri.github.io/).
 
 Issues
 ------
@@ -23,7 +23,7 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 Copyright and Licensing
 -----------------------
 
-Most Esri open source projects are licensed under the Apache 2.0 license. 
+Most Esri open source projects are licensed under the Apache 2.0 license.
 
 Esri does not require you to assign the copyright of your contributions, you retain the copyright. Esri does require that you make your contributions available under the Apache license in order to be included in the main repo.
 
@@ -51,5 +51,9 @@ limitations under the License.
 
 ### Contributing code written by others
 
-Please do not contribute code you did not write yourself, unless you are certain you have the legal ability to do so. Also ensure all code contributed can be licensed under the Apache License 2.0.
+Please do **not** contribute code you did not write yourself, unless you are certain you have the legal ability to do so. Also ensure all contributed code can be distributed under the Apache License 2.0.
+
+### Information for Esri employees
+
+More information for Esri employees interested in participating on Github can be found [here](EMPLOYEE.md).
 
