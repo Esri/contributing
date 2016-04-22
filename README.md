@@ -13,10 +13,11 @@ Contributing
 
 Please refer to each project's style guidelines and guidelines for submitting patches and additions. In general, we follow the "fork-and-pull" Git workflow.
 
- 1. Fork the repo on GitHub
- 2. Commit changes to a branch in your fork
- 3. Pull request "upstream" with your changes
- 4. Merge changes in to "upstream" repo
+ 1. **Fork** the repo on GitHub
+ 2. **Clone** the project to your own machine
+ 3. **Commit** changes to your own branch
+ 4. **Push** your work back up to your fork
+ 5. Submit a **Pull request** so that we can review your changes
 
 NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 
@@ -34,7 +35,7 @@ If appropriate, include the Apache 2.0 license summary at the top of each file a
 You can copy and paste the Apache 2.0 license summary from below.
 
 ```
-Copyright 2015 by Esri
+Copyright 2016 by Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -49,11 +50,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-### Contributing code written by others
+### FAQ
 
-Please do **not** contribute code you did not write yourself, unless you are certain you have the legal ability to do so. Also ensure all contributed code can be distributed under the Apache License 2.0.
-
-### Information for Esri employees
-
-More information for Esri employees interested in participating on Github can be found [here](EMPLOYEE.md).
-
+* [I'm an Esri employee.  How can I join the Esri Organization?](https://github.com/Esri/contributing/issues/9)
+* [Can i contribute code written by others?](https://github.com/Esri/contributing/issues/10)
