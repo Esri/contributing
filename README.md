@@ -35,7 +35,7 @@ If appropriate, include the Apache 2.0 license summary at the top of each file a
 You can copy and paste the Apache 2.0 license summary from below.
 
 ```
-Copyright 2016 by Esri
+Copyright 2017 by Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
