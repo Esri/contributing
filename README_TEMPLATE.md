@@ -11,7 +11,7 @@ A more freeform, long winded, less terse way to describe your very good project 
 ### Code Sample
 
 ```js
-const foo = 2+2
+const foo = 2 + 2
 ```
 
 ### Running Locally
