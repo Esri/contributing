@@ -30,12 +30,12 @@ Esri does not require you to assign the copyright of your contributions, you ret
 
 If appropriate, include the Apache 2.0 license summary at the top of each file along with the copyright info. If you are adding a new file that you wrote, include your name in the copyright notice in the license summary at the top of the file.
 
-### License Summary
+## License Summary
 
 You can copy and paste the Apache 2.0 license summary from below.
 
 ```
-Copyright 2018 by Esri
+Copyright 2017-2018 by Esri
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -50,9 +50,4 @@ See the License for the specific language governing permissions and
 limitations under the License.
 ```
 
-### FAQ
-
-* [I'm an Esri employee.  How can I join the Esri Organization?](https://github.com/Esri/contributing/issues/9)
-* [Can I contribute code written by others?](https://github.com/Esri/contributing/issues/10)
-* [Does Esri have a 'Code of Conduct'?](https://github.com/Esri/contributing/issues/13)
-* [I'm an Esri employee.  What are the requirements for projects?](https://github.com/Esri/contributing/issues/18)
+## [FAQ](https://github.com/Esri/contributing/issues?q=label%3Afaq+sort%3Aupdated-desc+is%3Aclosed)
