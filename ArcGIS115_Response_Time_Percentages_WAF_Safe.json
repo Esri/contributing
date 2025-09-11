@@ -1,0 +1,1250 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "prometheus",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ],
+    "datasource": "prometheus"
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 1,
+  "iteration": 1701868834477,
+  "links": [],
+  "panels": [
+    {
+      "aliasColors": {
+        "datasource": "prometheus"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "datasource": "prometheus"
+        },
+        "overrides": [],
+        "datasource": "prometheus"
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 0,
+        "datasource": "prometheus"
+      },
+      "hiddenSeries": false,
+      "id": 2,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false,
+        "datasource": "prometheus"
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true,
+        "datasource": "prometheus"
+      },
+      "percentage": false,
+      "pluginVersion": "7.5.17",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "(sum (rate(requests_response_time_seconds_bucket{le=\"0.05\",serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))/sum (rate(requests_response_time_seconds_count{serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))*100) or on() vector(0)",
+          "interval": "",
+          "legendFormat": "$serviceName",
+          "refId": "A",
+          "datasource": "prometheus"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "< 0.05 seconds",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual",
+        "datasource": "prometheus"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": [],
+        "datasource": "prometheus"
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:178",
+          "format": "percent",
+          "label": null,
+          "logBase": 1,
+          "max": "100",
+          "min": "0",
+          "show": true,
+          "datasource": "prometheus"
+        },
+        {
+          "$$hashKey": "object:179",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true,
+          "datasource": "prometheus"
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null,
+        "datasource": "prometheus"
+      }
+    },
+    {
+      "aliasColors": {
+        "datasource": "prometheus"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "datasource": "prometheus"
+        },
+        "overrides": [],
+        "datasource": "prometheus"
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 0,
+        "datasource": "prometheus"
+      },
+      "hiddenSeries": false,
+      "id": 9,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false,
+        "datasource": "prometheus"
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true,
+        "datasource": "prometheus"
+      },
+      "percentage": false,
+      "pluginVersion": "7.5.17",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "(sum (rate(requests_response_time_seconds_bucket{le=\"0.1\",serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))/sum (rate(requests_response_time_seconds_count{serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))*100) or on() vector(0)",
+          "interval": "",
+          "legendFormat": "$serviceName",
+          "refId": "A",
+          "datasource": "prometheus"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "< 0.1 seconds",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual",
+        "datasource": "prometheus"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": [],
+        "datasource": "prometheus"
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:178",
+          "format": "percent",
+          "label": null,
+          "logBase": 1,
+          "max": "100",
+          "min": "0",
+          "show": true,
+          "datasource": "prometheus"
+        },
+        {
+          "$$hashKey": "object:179",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true,
+          "datasource": "prometheus"
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null,
+        "datasource": "prometheus"
+      }
+    },
+    {
+      "aliasColors": {
+        "datasource": "prometheus"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "datasource": "prometheus"
+        },
+        "overrides": [],
+        "datasource": "prometheus"
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 9,
+        "datasource": "prometheus"
+      },
+      "hiddenSeries": false,
+      "id": 10,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false,
+        "datasource": "prometheus"
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true,
+        "datasource": "prometheus"
+      },
+      "percentage": false,
+      "pluginVersion": "7.5.17",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "(sum (rate(requests_response_time_seconds_bucket{le=\"0.25\",serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))/sum (rate(requests_response_time_seconds_count{serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))*100) or on() vector(0)",
+          "interval": "",
+          "legendFormat": "$serviceName",
+          "refId": "A",
+          "datasource": "prometheus"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "< 0.25 seconds",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual",
+        "datasource": "prometheus"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": [],
+        "datasource": "prometheus"
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:178",
+          "format": "percent",
+          "label": null,
+          "logBase": 1,
+          "max": "100",
+          "min": "0",
+          "show": true,
+          "datasource": "prometheus"
+        },
+        {
+          "$$hashKey": "object:179",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true,
+          "datasource": "prometheus"
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null,
+        "datasource": "prometheus"
+      }
+    },
+    {
+      "aliasColors": {
+        "datasource": "prometheus"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "datasource": "prometheus"
+        },
+        "overrides": [],
+        "datasource": "prometheus"
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 9,
+        "datasource": "prometheus"
+      },
+      "hiddenSeries": false,
+      "id": 5,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false,
+        "datasource": "prometheus"
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true,
+        "datasource": "prometheus"
+      },
+      "percentage": false,
+      "pluginVersion": "7.5.17",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "(sum (rate(requests_response_time_seconds_bucket{le=\"0.5\",serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))/sum (rate(requests_response_time_seconds_count{serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))*100) or on() vector(0)",
+          "interval": "",
+          "legendFormat": "$serviceName",
+          "refId": "A",
+          "datasource": "prometheus"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "< 0.5 seconds",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual",
+        "datasource": "prometheus"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": [],
+        "datasource": "prometheus"
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:178",
+          "format": "percent",
+          "label": null,
+          "logBase": 1,
+          "max": "100",
+          "min": "0",
+          "show": true,
+          "datasource": "prometheus"
+        },
+        {
+          "$$hashKey": "object:179",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true,
+          "datasource": "prometheus"
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null,
+        "datasource": "prometheus"
+      }
+    },
+    {
+      "aliasColors": {
+        "datasource": "prometheus"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "datasource": "prometheus"
+        },
+        "overrides": [],
+        "datasource": "prometheus"
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 18,
+        "datasource": "prometheus"
+      },
+      "hiddenSeries": false,
+      "id": 11,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false,
+        "datasource": "prometheus"
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true,
+        "datasource": "prometheus"
+      },
+      "percentage": false,
+      "pluginVersion": "7.5.17",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "(sum (rate(requests_response_time_seconds_bucket{le=\"0.75\",serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))/sum (rate(requests_response_time_seconds_count{serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))*100) or on() vector(0)",
+          "interval": "",
+          "legendFormat": "$serviceName",
+          "refId": "A",
+          "datasource": "prometheus"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "< 0.75 seconds",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual",
+        "datasource": "prometheus"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": [],
+        "datasource": "prometheus"
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:178",
+          "format": "percent",
+          "label": null,
+          "logBase": 1,
+          "max": "100",
+          "min": "0",
+          "show": true,
+          "datasource": "prometheus"
+        },
+        {
+          "$$hashKey": "object:179",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true,
+          "datasource": "prometheus"
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null,
+        "datasource": "prometheus"
+      }
+    },
+    {
+      "aliasColors": {
+        "datasource": "prometheus"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "datasource": "prometheus"
+        },
+        "overrides": [],
+        "datasource": "prometheus"
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 18,
+        "datasource": "prometheus"
+      },
+      "hiddenSeries": false,
+      "id": 3,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false,
+        "datasource": "prometheus"
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true,
+        "datasource": "prometheus"
+      },
+      "percentage": false,
+      "pluginVersion": "7.5.17",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "(sum (rate(requests_response_time_seconds_bucket{le=\"1.0\",serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))/sum (rate(requests_response_time_seconds_count{serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))*100) or on() vector(0)",
+          "interval": "",
+          "legendFormat": "$serviceName",
+          "refId": "A",
+          "datasource": "prometheus"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "< 1 seconds",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual",
+        "datasource": "prometheus"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": [],
+        "datasource": "prometheus"
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:178",
+          "format": "percent",
+          "label": null,
+          "logBase": 1,
+          "max": "100",
+          "min": "0",
+          "show": true,
+          "datasource": "prometheus"
+        },
+        {
+          "$$hashKey": "object:179",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true,
+          "datasource": "prometheus"
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null,
+        "datasource": "prometheus"
+      }
+    },
+    {
+      "aliasColors": {
+        "datasource": "prometheus"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "datasource": "prometheus"
+        },
+        "overrides": [],
+        "datasource": "prometheus"
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 27,
+        "datasource": "prometheus"
+      },
+      "hiddenSeries": false,
+      "id": 6,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false,
+        "datasource": "prometheus"
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true,
+        "datasource": "prometheus"
+      },
+      "percentage": false,
+      "pluginVersion": "7.5.17",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "(sum (rate(requests_response_time_seconds_bucket{le=\"2.5\",serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))/sum (rate(requests_response_time_seconds_count{serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))*100) or on() vector(0)",
+          "interval": "",
+          "legendFormat": "$serviceName",
+          "refId": "A",
+          "datasource": "prometheus"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "< 2.5 seconds",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual",
+        "datasource": "prometheus"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": [],
+        "datasource": "prometheus"
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:178",
+          "format": "percent",
+          "label": null,
+          "logBase": 1,
+          "max": "100",
+          "min": "0",
+          "show": true,
+          "datasource": "prometheus"
+        },
+        {
+          "$$hashKey": "object:179",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true,
+          "datasource": "prometheus"
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null,
+        "datasource": "prometheus"
+      }
+    },
+    {
+      "aliasColors": {
+        "datasource": "prometheus"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "datasource": "prometheus"
+        },
+        "overrides": [],
+        "datasource": "prometheus"
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 27,
+        "datasource": "prometheus"
+      },
+      "hiddenSeries": false,
+      "id": 7,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false,
+        "datasource": "prometheus"
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true,
+        "datasource": "prometheus"
+      },
+      "percentage": false,
+      "pluginVersion": "7.5.17",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "(sum (rate(requests_response_time_seconds_bucket{le=\"5.0\",serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))/sum (rate(requests_response_time_seconds_count{serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))*100) or on() vector(0)",
+          "interval": "",
+          "legendFormat": "$serviceName",
+          "refId": "A",
+          "datasource": "prometheus"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "< 5.0 seconds",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual",
+        "datasource": "prometheus"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": [],
+        "datasource": "prometheus"
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:178",
+          "format": "percent",
+          "label": null,
+          "logBase": 1,
+          "max": "100",
+          "min": "0",
+          "show": true,
+          "datasource": "prometheus"
+        },
+        {
+          "$$hashKey": "object:179",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true,
+          "datasource": "prometheus"
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null,
+        "datasource": "prometheus"
+      }
+    },
+    {
+      "aliasColors": {
+        "datasource": "prometheus"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "datasource": "prometheus"
+        },
+        "overrides": [],
+        "datasource": "prometheus"
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 0,
+        "y": 36,
+        "datasource": "prometheus"
+      },
+      "hiddenSeries": false,
+      "id": 8,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false,
+        "datasource": "prometheus"
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true,
+        "datasource": "prometheus"
+      },
+      "percentage": false,
+      "pluginVersion": "7.5.17",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "(sum (rate(requests_response_time_seconds_bucket{le=\"7.5\",serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))/sum (rate(requests_response_time_seconds_count{serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))*100) or on() vector(0)",
+          "interval": "",
+          "legendFormat": "$serviceName",
+          "refId": "A",
+          "datasource": "prometheus"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "< 7.5 seconds",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual",
+        "datasource": "prometheus"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": [],
+        "datasource": "prometheus"
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:178",
+          "format": "percent",
+          "label": null,
+          "logBase": 1,
+          "max": "100",
+          "min": "0",
+          "show": true,
+          "datasource": "prometheus"
+        },
+        {
+          "$$hashKey": "object:179",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true,
+          "datasource": "prometheus"
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null,
+        "datasource": "prometheus"
+      }
+    },
+    {
+      "aliasColors": {
+        "datasource": "prometheus"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "datasource": "prometheus"
+        },
+        "overrides": [],
+        "datasource": "prometheus"
+      },
+      "fill": 1,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 9,
+        "w": 12,
+        "x": 12,
+        "y": 36,
+        "datasource": "prometheus"
+      },
+      "hiddenSeries": false,
+      "id": 4,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false,
+        "datasource": "prometheus"
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true,
+        "datasource": "prometheus"
+      },
+      "percentage": false,
+      "pluginVersion": "7.5.17",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "(sum (rate(requests_response_time_seconds_bucket{le=\"10.0\",serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))/sum (rate(requests_response_time_seconds_count{serviceName=\"$serviceName\", operation=\"$operation\"}[5m]))*100) or on() vector(0)",
+          "interval": "",
+          "legendFormat": "$serviceName",
+          "refId": "A",
+          "datasource": "prometheus"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "< 10 seconds",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual",
+        "datasource": "prometheus"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": [],
+        "datasource": "prometheus"
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:178",
+          "format": "percent",
+          "label": null,
+          "logBase": 1,
+          "max": "100",
+          "min": "0",
+          "show": true,
+          "datasource": "prometheus"
+        },
+        {
+          "$$hashKey": "object:179",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true,
+          "datasource": "prometheus"
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null,
+        "datasource": "prometheus"
+      }
+    }
+  ],
+  "refresh": "1m",
+  "schemaVersion": 27,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "allValue": null,
+        "current": {
+          "selected": true,
+          "tags": [],
+          "text": [
+            "ITTSampleWorldCities"
+          ],
+          "value": [
+            "ITTSampleWorldCities"
+          ],
+          "datasource": "prometheus"
+        },
+        "datasource": "prometheus",
+        "definition": "label_values(serviceName)",
+        "description": null,
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": "Service Name",
+        "multi": false,
+        "name": "serviceName",
+        "options": [
+          {
+            "selected": false,
+            "text": "ITTSampleWorldCities",
+            "value": "ITTSampleWorldCities",
+            "datasource": "prometheus"
+          },
+          {
+            "selected": true,
+            "text": "SampleWorldCities",
+            "value": "SampleWorldCities",
+            "datasource": "prometheus"
+          },
+          {
+            "selected": false,
+            "text": "System/SharedMapServiceHost",
+            "value": "System/SharedMapServiceHost",
+            "datasource": "prometheus"
+          },
+          {
+            "selected": false,
+            "text": "Utilities/Geometry",
+            "value": "Utilities/Geometry",
+            "datasource": "prometheus"
+          }
+        ],
+        "query": {
+          "query": "label_values(serviceName)",
+          "refId": "StandardVariableQuery",
+          "datasource": "prometheus"
+        },
+        "refresh": 0,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      },
+      {
+        "allValue": null,
+        "current": {
+          "selected": true,
+          "tags": [],
+          "text": [
+            "None"
+          ],
+          "value": [
+            ""
+          ],
+          "datasource": "prometheus"
+        },
+        "datasource": "prometheus",
+        "definition": "label_values(operation)",
+        "description": null,
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": "Operation",
+        "multi": false,
+        "name": "operation",
+        "options": [
+          {
+            "selected": true,
+            "text": "export",
+            "value": "export",
+            "datasource": "prometheus"
+          },
+          {
+            "selected": true,
+            "text": "query",
+            "value": "query",
+            "datasource": "prometheus"
+          }
+        ],
+        "query": {
+          "query": "label_values(operation)",
+          "refId": "StandardVariableQuery",
+          "datasource": "prometheus"
+        },
+        "refresh": 0,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      }
+    ],
+    "datasource": "prometheus"
+  },
+  "time": {
+    "from": "now-24h",
+    "to": "now",
+    "datasource": "prometheus"
+  },
+  "timepicker": {
+    "datasource": "prometheus"
+  },
+  "timezone": "",
+  "title": "ArcGIS 11.5 \u2013 Response Time Percentages (WAF\u2011Safe)",
+  "uid": "arcgis115-rtpct-waf",
+  "version": 1,
+  "datasource": "prometheus"
+}

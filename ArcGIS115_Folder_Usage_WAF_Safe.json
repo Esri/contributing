@@ -1,0 +1,534 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": "prometheus",
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ],
+    "datasource": "prometheus"
+  },
+  "editable": true,
+  "gnetId": null,
+  "graphTooltip": 0,
+  "id": 4,
+  "iteration": 1701869034160,
+  "links": [],
+  "panels": [
+    {
+      "aliasColors": {
+        "Hosted/FireStations": "blue",
+        "datasource": "prometheus"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "prometheus",
+      "description": "Rate of Requests",
+      "fieldConfig": {
+        "defaults": {
+          "datasource": "prometheus"
+        },
+        "overrides": [],
+        "datasource": "prometheus"
+      },
+      "fill": 0,
+      "fillGradient": 1,
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0,
+        "datasource": "prometheus"
+      },
+      "hiddenSeries": false,
+      "id": 2,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false,
+        "datasource": "prometheus"
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true,
+        "datasource": "prometheus"
+      },
+      "percentage": false,
+      "pluginVersion": "7.5.17",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "(sum (rate (requests{folderName=\"$folderName\"}[5m]))) or on() vector(0)",
+          "interval": "",
+          "legendFormat": "$folderName",
+          "refId": "A",
+          "datasource": "prometheus"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Rate of Requests",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual",
+        "datasource": "prometheus"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": [],
+        "datasource": "prometheus"
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:266",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": "0",
+          "show": true,
+          "datasource": "prometheus"
+        },
+        {
+          "$$hashKey": "object:267",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true,
+          "datasource": "prometheus"
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null,
+        "datasource": "prometheus"
+      }
+    },
+    {
+      "aliasColors": {
+        "Hosted/FireStations": "yellow",
+        "datasource": "prometheus"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "datasource": "prometheus"
+        },
+        "overrides": [],
+        "datasource": "prometheus"
+      },
+      "fill": 0,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 0,
+        "datasource": "prometheus"
+      },
+      "hiddenSeries": false,
+      "id": 7,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false,
+        "datasource": "prometheus"
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true,
+        "datasource": "prometheus"
+      },
+      "percentage": false,
+      "pluginVersion": "7.5.17",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "(sum (rate(requests_response_time_seconds_sum{folderName=\"$folderName\"}[5m]))/sum (rate(requests_response_time_seconds_count{folderName=\"$folderName\"}[5m]))) or on() vector(0)",
+          "interval": "",
+          "legendFormat": "$folderName",
+          "refId": "A",
+          "datasource": "prometheus"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Average Request Response Times In Seconds",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual",
+        "datasource": "prometheus"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": [],
+        "datasource": "prometheus"
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:322",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": "0",
+          "show": true,
+          "datasource": "prometheus"
+        },
+        {
+          "$$hashKey": "object:323",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true,
+          "datasource": "prometheus"
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null,
+        "datasource": "prometheus"
+      }
+    },
+    {
+      "aliasColors": {
+        "datasource": "prometheus"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "datasource": "prometheus"
+        },
+        "overrides": [],
+        "datasource": "prometheus"
+      },
+      "fill": 0,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 8,
+        "datasource": "prometheus"
+      },
+      "hiddenSeries": false,
+      "id": 3,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false,
+        "datasource": "prometheus"
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true,
+        "datasource": "prometheus"
+      },
+      "percentage": false,
+      "pluginVersion": "7.5.17",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "(sum(rate (requests_succeeded{folderName=\"$folderName\"}[5m]))) or on() vector(0)",
+          "interval": "",
+          "legendFormat": "$folderName",
+          "refId": "A",
+          "datasource": "prometheus"
+        },
+        {
+          "expr": "(sum (rate (requests_failed{folderName=\"$folderName\"}[5m]))) or on() vector(0)",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "$folderName",
+          "refId": "B",
+          "datasource": "prometheus"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Rate of Succeeded / Failed Requests",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual",
+        "datasource": "prometheus"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": [],
+        "datasource": "prometheus"
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:351",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": "0",
+          "show": true,
+          "datasource": "prometheus"
+        },
+        {
+          "$$hashKey": "object:352",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true,
+          "datasource": "prometheus"
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null,
+        "datasource": "prometheus"
+      }
+    },
+    {
+      "aliasColors": {
+        "datasource": "prometheus"
+      },
+      "bars": false,
+      "dashLength": 10,
+      "dashes": false,
+      "datasource": "prometheus",
+      "fieldConfig": {
+        "defaults": {
+          "datasource": "prometheus"
+        },
+        "overrides": [],
+        "datasource": "prometheus"
+      },
+      "fill": 0,
+      "fillGradient": 0,
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 8,
+        "datasource": "prometheus"
+      },
+      "hiddenSeries": false,
+      "id": 8,
+      "legend": {
+        "avg": false,
+        "current": false,
+        "max": false,
+        "min": false,
+        "show": true,
+        "total": false,
+        "values": false,
+        "datasource": "prometheus"
+      },
+      "lines": true,
+      "linewidth": 1,
+      "nullPointMode": "null",
+      "options": {
+        "alertThreshold": true,
+        "datasource": "prometheus"
+      },
+      "percentage": false,
+      "pluginVersion": "7.5.17",
+      "pointradius": 2,
+      "points": false,
+      "renderer": "flot",
+      "seriesOverrides": [],
+      "spaceLength": 10,
+      "stack": false,
+      "steppedLine": false,
+      "targets": [
+        {
+          "expr": "(sum (rate (requests_wait_timedout{folderName=\"$folderName\"}[5m]))) or on() vector(0)",
+          "interval": "",
+          "legendFormat": "$folderName",
+          "refId": "A",
+          "datasource": "prometheus"
+        },
+        {
+          "expr": "(sum (rate (requests_usage_timedout{folderName=\"$folderName\"}[5m]))) or on() vector(0)",
+          "hide": false,
+          "interval": "",
+          "legendFormat": "$folderName",
+          "refId": "B",
+          "datasource": "prometheus"
+        }
+      ],
+      "thresholds": [],
+      "timeFrom": null,
+      "timeRegions": [],
+      "timeShift": null,
+      "title": "Rate of Requests Usage / Wait Timed Out",
+      "tooltip": {
+        "shared": true,
+        "sort": 0,
+        "value_type": "individual",
+        "datasource": "prometheus"
+      },
+      "type": "graph",
+      "xaxis": {
+        "buckets": null,
+        "mode": "time",
+        "name": null,
+        "show": true,
+        "values": [],
+        "datasource": "prometheus"
+      },
+      "yaxes": [
+        {
+          "$$hashKey": "object:380",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": "0",
+          "show": true,
+          "datasource": "prometheus"
+        },
+        {
+          "$$hashKey": "object:381",
+          "format": "short",
+          "label": null,
+          "logBase": 1,
+          "max": null,
+          "min": null,
+          "show": true,
+          "datasource": "prometheus"
+        }
+      ],
+      "yaxis": {
+        "align": false,
+        "alignLevel": null,
+        "datasource": "prometheus"
+      }
+    }
+  ],
+  "refresh": "1m",
+  "schemaVersion": 27,
+  "style": "dark",
+  "tags": [],
+  "templating": {
+    "list": [
+      {
+        "allValue": null,
+        "current": {
+          "selected": false,
+          "text": "System",
+          "value": "System",
+          "datasource": "prometheus"
+        },
+        "datasource": "prometheus",
+        "definition": "label_values(folderName)",
+        "description": null,
+        "error": null,
+        "hide": 0,
+        "includeAll": false,
+        "label": "Folder Name",
+        "multi": false,
+        "name": "folderName",
+        "options": [],
+        "query": {
+          "query": "label_values(folderName)",
+          "refId": "StandardVariableQuery",
+          "datasource": "prometheus"
+        },
+        "refresh": 2,
+        "regex": "",
+        "skipUrlSync": false,
+        "sort": 0,
+        "tagValuesQuery": "",
+        "tags": [],
+        "tagsQuery": "",
+        "type": "query",
+        "useTags": false
+      }
+    ],
+    "datasource": "prometheus"
+  },
+  "time": {
+    "from": "now-24h",
+    "to": "now",
+    "datasource": "prometheus"
+  },
+  "timepicker": {
+    "datasource": "prometheus"
+  },
+  "timezone": "",
+  "title": "ArcGIS 11.5 \u2013 Folder Usage (WAF\u2011Safe)",
+  "uid": "arcgis115-folder-waf",
+  "version": 1,
+  "datasource": "prometheus"
+}
