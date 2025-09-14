@@ -39,5 +39,5 @@ Repository maintainers reserve the right to remove offensive content. To report 
 ## Consequences
 
 Violations of this Code of Conduct may result in:
-  * Disqualification from Esri Events and Conferences
-  * Being blocked from Esri's [GitHub Organization](https://help.github.com/articles/blocking-a-user-from-your-organization/)
+- Disqualification from Esri Events and Conferences
+- Being blocked from Esri's [GitHub Organization](https://help.github.com/articles/blocking-a-user-from-your-organization/)
