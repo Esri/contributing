@@ -1,12 +1,12 @@
 # Code of Conduct
 
-v1.0.0, February 2019
+v1.1.0, September 2025
 
 > Adapted from Esri's [Conference and Community Spaces Code of Conduct](https://www.esri.com/en-us/about/events/code-of-conduct)
 
 ## Purpose
 
-At Esri, we believe geography can make the world a better place. In adopting this Community Code of Conduct, we as Esri employees are committed to fostering a welcoming environment for collaboration, creativity, and the free exchange of ideas for developing, maintaining, and using open source GIS software. We aim to empower all participants to actively engage and help build a friendly and safe Esri open source developer community.
+At Esri, we believe software can make the world a better place. In adopting this Community Code of Conduct, we as Esri employees are committed to fostering a welcoming environment for collaboration, creativity, and the free exchange of ideas for developing, maintaining, and using open source software. We aim to empower all participants to actively engage and help build a friendly and safe Esri open source developer community.
 
 Whether publicly or privately, and whether in-person or online, we expect all members of this community to interact both professionally and without harassment toward others, regardless of race, color, creed, gender, gender identity, religion, marital status, domestic partner status, genetic information, age, national origin or ancestry, military or veteran status, sexual orientation, or either physical or mental disability.
 
