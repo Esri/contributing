@@ -2,7 +2,9 @@
 
 > An extremely brief elevator pitch type description of your project.
 
-A more freeform, long winded, less terse way to describe your very good project and all the useful things it does and maybe where it does them or how or anything else folks should know _right up front_.
+A more freeform, long winded, less terse way to describe your very good project
+and all the useful things it does and maybe where it does them or how or
+anything else folks should know _right up front_.
 
 ![animation](https://raw.githubusercontent.com/jgravois/lrm-esri/master//animation.gif)
 
@@ -22,7 +24,8 @@ npm install && npm test
 
 ### Contributing
 
-Esri welcomes contributions from anyone and everyone. Please see our [guidelines for contributing](https://github.com/Esri/contributing/blob/master/CONTRIBUTING.md).
+Esri welcomes contributions from anyone and everyone. Please see our
+[guidelines for contributing](https://github.com/Esri/contributing/blob/master/CONTRIBUTING.md).
 
 ### License
 
